@@ -111,7 +111,7 @@ int cpu_fanpercent()
 	return 0;
 }
 
-#ifndef __aarch64__
+#if defined(__arm__ ) || defined( __aarch64__)
 static inline void cpuid(int functionnumber, int output[4]) {
 #if defined (_MSC_VER) || defined (__INTEL_COMPILER)
 	// Microsoft or Intel compiler, intrin.h included
@@ -138,7 +138,7 @@ static inline void cpuid(int functionnumber, int output[4]) {
 	}
 #endif
 }
-#else /* !__aarch64__ */
+#else /* !defined(__arm__ ) || defined( __aarch64__) */
 #define cpuid(fn, out) out[0] = 0;
 #endif
 
