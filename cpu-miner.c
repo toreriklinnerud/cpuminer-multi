@@ -161,7 +161,6 @@ static const char *algo_names[] = {
 	"pluck",
 	"qubit",
 	"scrypt",
-	"scrypt-jane",
 	"shavite3",
 	"sha256d",
 	"sia",
@@ -317,7 +316,6 @@ Options:\n\
                           qubit        Qubit\n\
                           scrypt       scrypt(1024, 1, 1) (default)\n\
                           scrypt:N     scrypt(N, 1, 1)\n\
-                          scrypt-jane:N (with N factor from 4 to 30)\n\
                           shavite3     Shavite3\n\
                           sha256d      SHA-256d\n\
                           sia          Blake2-B\n\
@@ -2268,9 +2266,6 @@ static void *miner_thread(void *userdata)
 		case ALGO_SCRYPT:
 			rc = scanhash_scrypt(thr_id, &work, max_nonce, &hashes_done, scratchbuf, opt_scrypt_n);
 			break;
-		case ALGO_SCRYPTJANE:
-			rc = scanhash_scryptjane(opt_scrypt_n, thr_id, &work, max_nonce, &hashes_done);
-			break;
 		case ALGO_SHAVITE3:
 			rc = scanhash_ink(thr_id, &work, max_nonce, &hashes_done);
 			break;
@@ -2851,8 +2846,6 @@ void parse_arg(int key, char *arg)
 				i = opt_algo = ALGO_LYRA2;
 			else if (!strcasecmp("lyra2v2", arg))
 				i = opt_algo = ALGO_LYRA2REV2;
-			else if (!strcasecmp("scryptjane", arg))
-				i = opt_algo = ALGO_SCRYPTJANE;
 			else if (!strcasecmp("sibcoin", arg))
 				i = opt_algo = ALGO_SIB;
 			else if (!strcasecmp("timetravel10", arg))

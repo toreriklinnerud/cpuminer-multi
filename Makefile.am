@@ -83,7 +83,6 @@ cpuminer_SOURCES = \
   algo/pluck.c \
   algo/qubit.c \
   algo/scrypt.c \
-  algo/scrypt-jane.c \
   algo/sha2.c \
   algo/sia.c \
   algo/sibcoin.c \

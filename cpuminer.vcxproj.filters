@@ -312,9 +312,6 @@
     <ClCompile Include="algo\axiom.c">
       <Filter>algo</Filter>
     </ClCompile>
-    <ClCompile Include="algo\scrypt-jane.c">
-      <Filter>algo</Filter>
-    </ClCompile>
     <ClCompile Include="algo\sia.c">
       <Filter>algo</Filter>
     </ClCompile>
@@ -464,63 +461,6 @@
     <ClInclude Include="lyra2\Sponge.h">
       <Filter>crypto</Filter>
     </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-mix_salsa.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-mix_salsa-avx.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-mix_salsa-sse2.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-pbkdf2.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-portable.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-portable-x86.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-romix.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-romix-basic.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-romix-template.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-salsa.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-test-vectors.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-chacha.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-hash.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-hash_keccak.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-hash_sha256.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-mix_chacha.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-mix_chacha-avx.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-mix_chacha-sse2.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
-    <ClInclude Include="scryptjane\scrypt-jane-mix_chacha-ssse3.h">
-      <Filter>scrypt-jane</Filter>
-    </ClInclude>
     <ClInclude Include="crypto\int-util.h">
       <Filter>crypto</Filter>
     </ClInclude>
@@ -567,9 +507,6 @@
     </Filter>
     <Filter Include="arch\arm">
       <UniqueIdentifier>{5a05483f-0f3f-43fe-bfd1-a14519e30e4d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="scrypt-jane">
-      <UniqueIdentifier>{5ed226e8-1512-481d-a88d-18644da87dcd}</UniqueIdentifier>
     </Filter>
     <Filter Include="algo">
       <UniqueIdentifier>{34f266e4-b48f-4721-ac34-474b65726498}</UniqueIdentifier>
